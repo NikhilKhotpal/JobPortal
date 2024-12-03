@@ -1,0 +1,187 @@
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .left-panel, .right-panel {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .left-panel {
+            width: 100%;
+            max-width: 350px;
+            flex: 1;
+        }
+        .right-panel {
+            width: 100%;
+            max-width: 700px;
+            flex: 2;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .profile-header .level {
+            background-color: #007bff;
+            color: white;
+            border-radius: 12px;
+            padding: 2px 8px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .profile-header .share-profile {
+            color: #28a745;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .profile-header .share-profile i {
+            margin-right: 5px;
+        }
+        .profile-header .edit-profile {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .info-section {
+            margin-top: 20px;
+        }
+        .info-section div {
+            margin-bottom: 10px;
+        }
+        .info-section .label {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .info-section .value {
+            font-size: 16px;
+        }
+        .right-panel .section {
+            margin-bottom: 20px;
+        }
+        .right-panel .section-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .right-panel .section-content {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .right-panel .section-content .add-link {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .right-panel .education-item, .right-panel .skills-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .right-panel .education-item .details, .right-panel .skills-item .details {
+            display: flex;
+            align-items: center;
+        }
+        .right-panel .education-item .details i, .right-panel .skills-item .details i {
+            margin-right: 10px;
+        }
+        .right-panel .education-item .details .batch, .right-panel .education-item .details .type {
+            background-color: #e9ecef;
+            border-radius: 12px;
+            padding: 2px 8px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .right-panel .skills-item .details .skill {
+            background-color: #e9ecef;
+            border-radius: 12px;
+            padding: 2px 8px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .right-panel .skills-item .details .verified {
+            color: #28a745;
+            margin-left: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal input[type="text"], .modal input[type="email"], .modal input[type="tel"], .modal input[type="date"], .modal input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .modal button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .modal button:hover {
+            background-color: #45a049;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-wrap: nowrap;
+            }
+            .left-panel {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
